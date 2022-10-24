@@ -63,7 +63,7 @@ extension SpaceViewController: CodableViews{
     }
     
     func additional() {
-        view.backgroundColor = .black
+        view.backgroundColor = .red
     }
     
 }
