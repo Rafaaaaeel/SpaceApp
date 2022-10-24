@@ -34,13 +34,6 @@ class HeaderView: UIView, CodableViews {
         return label
     }()
     
-    
-    lazy var searchButton: UIButton = {
-        let button = UIButton(type: .custom)
-        button.setImage(UIImage(systemName: "magnifyingglass", withConfiguration: UIImage.SymbolConfiguration(scale: .large)), for: [])
-        button.tintColor = .white
-        return button
-    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -57,8 +50,8 @@ class HeaderView: UIView, CodableViews {
 extension HeaderView{
     func setupHiearchy() {
         headerStackView.addArregendSubViews(menuButton,
-                                            titleLabel,
-                                            searchButton)
+                                            titleLabel
+                                            )
         addSubview(headerStackView)
     }
     
